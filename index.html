@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dumpling Haven | Wrapped in Flavor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">🥟</span>
+        <span class="logo-text">Dumpling Haven</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#varieties">Global Varieties</a>
+        <a href="#cooking">Cooking Methods</a>
+        <a href="#sauce-lab">Dipping Sauce Lab</a>
+        <a href="#facts">Fun Facts</a>
+      </nav>
+      <a href="#sauce-lab" class="nav-cta">Mix a Sauce</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">✨ Universal Comfort Food</div>
+      <h1 class="hero-title">Pockets of Joy,<br><span class="highlight">Wrapped with Love</span></h1>
+      <p class="hero-subtitle">
+        From silky soup dumplings to crispy golden potstickers and savory pierogis, explore the art, history, and mouthwatering craft of dumplings around the globe.
+      </p>
+      <div class="hero-actions">
+        <a href="#varieties" class="btn btn-primary">Explore Varieties</a>
+        <a href="#sauce-lab" class="btn btn-secondary">Sauce Calculator 🥣</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="dumpling-card-showcase">
+        <div class="steamer-art">
+          <div class="steamer-lid"></div>
+          <div class="dumpling-cluster">
+            <span class="floating-dumpling d1">🥟</span>
+            <span class="floating-dumpling d2">🥟</span>
+            <span class="floating-dumpling d3">🥟</span>
+          </div>
+          <div class="steam steam-1"></div>
+          <div class="steam steam-2"></div>
+          <div class="steam steam-3"></div>
+        </div>
+        <div class="showcase-caption">
+          <strong>Fresh From The Steamer</strong>
+          <span>Hand-folded daily with care</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section container">
+    <div class="section-header">
+      <span class="section-tag">The Story</span>
+      <h2>What Makes a Dumpling?</h2>
+      <p>Almost every culinary culture across human history invented its own version of a dumpling: tender dough enveloping a savory or sweet treasure.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🥢</div>
+        <h3>The Perfect Wrapper</h3>
+        <p>Whether made from wheat flour, rice flour, or tapioca starch, the skin can range from paper-thin translucent crystal wrappers to hearty, chewy doughs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🥩</div>
+        <h3>The Filling</h3>
+        <p>Juicy minced pork, tender chicken, earthy wild mushrooms, cabbage, melted cheeses, or potatoes spiced with aromatic ginger, garlic, and scallions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3>The Technique</h3>
+        <p>Pleated, crescent-pinched, purse-gathered, or fork-crimped. The fold isn't just ornamental—it locks in scalding juices and creates crisp texture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Varieties Section -->
+  <section id="varieties" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Culinary Geography</span>
+        <h2>Dumplings Around the World</h2>
+        <p>Discover beloved regional icons and their signature fold & flavor profiles.</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-category="all">All Varieties</button>
+        <button class="filter-btn" data-category="east-asia">East Asia</button>
+        <button class="filter-btn" data-category="central-asia">Central & South Asia</button>
+        <button class="filter-btn" data-category="europe">Europe</button>
+      </div>
+
+      <div class="varieties-grid" id="varieties-container">
+        <!-- Cards populated dynamically via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cooking Methods Section -->
+  <section id="cooking" class="section container">
+    <div class="section-header">
+      <span class="section-tag">Preparation</span>
+      <h2>Three Classic Ways to Cook</h2>
+      <p>Different cooking methods transform the texture of the wrapper and filling.</p>
+    </div>
+
+    <div class="methods-grid">
+      <div class="method-card">
+        <div class="method-badge">Soft & Delicate</div>
+        <div class="method-icon">♨️</div>
+        <h3>Steamed (Zheng)</h3>
+        <p>Cooked inside perforated bamboo steamer baskets over boiling water. Keeps wrappers supple and seals in rich meat broths like in Xiao Long Bao.</p>
+        <div class="method-stat"><span>Time:</span> 8–10 mins</div>
+      </div>
+
+      <div class="method-card featured">
+        <div class="method-badge">Crispy & Juicy</div>
+        <div class="method-icon">🍳</div>
+        <h3>Pan-Fried (Guotie)</h3>
+        <p>Sizzled in a hot skillet with oil, then steamed with a splash of water, and finally uncovered until a golden, lacework crust forms underneath.</p>
+        <div class="method-stat"><span>Time:</span> 10–12 mins</div>
+      </div>
+
+      <div class="method-card">
+        <div class="method-badge">Hearty & Smooth</div>
+        <div class="method-icon">🍲</div>
+        <h3>Boiled (Shui Jiao)</h3>
+        <p>Gently simmered directly in hot broth or water until they float buoyantly. Often served in warming chili broths or drained with a dipping sauce.</p>
+        <div class="method-stat"><span>Time:</span> 6–8 mins</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sauce Lab -->
+  <section id="sauce-lab" class="section section-alt">
+    <div class="container">
+      <div class="sauce-lab-wrapper">
+        <div class="sauce-info">
+          <span class="section-tag">Interactive Kitchen</span>
+          <h2>The Ultimate Dipping Sauce Calculator</h2>
+          <p>
+            No dumpling is complete without the holy balance of salty, tangy, spicy, and nutty aromatics. Customize your portion size to get exact measurements!
+          </p>
+
+          <div class="portion-selector">
+            <label for="servings-slider">Number of Dumpling Eaters: <strong id="servings-display">2 people</strong></label>
+            <input type="range" id="servings-slider" min="1" max="10" value="2" step="1">
+          </div>
+
+          <div class="preference-switches">
+            <button class="style-btn active" data-style="classic">Classic Tangy</button>
+            <button class="style-btn" data-style="spicy">Sichuan Fiery</button>
+            <button class="style-btn" data-style="garlic">Garlic Ginger Boost</button>
+          </div>
+        </div>
+
+        <div class="sauce-recipe-card">
+          <div class="recipe-header">
+            <h3>🥣 Your Custom Dip Formula</h3>
+            <span class="recipe-yield" id="recipe-yield">Serves: 2 (approx. 24 dumplings)</span>
+          </div>
+          <ul class="ingredient-list" id="ingredient-list">
+            <!-- Dynamically generated -->
+          </ul>
+          <div class="sauce-tip">
+            💡 <strong>Chef's Secret:</strong> Always add finely chopped scallions and toasted sesame seeds right before dipping to preserve their crunch and aroma!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Facts Accordion -->
+  <section id="facts" class="section container">
+    <div class="section-header">
+      <span class="section-tag">Trivia & Lore</span>
+      <h2>Did You Know?</h2>
+      <p>A few bite-sized historical and cultural nuggets about dumplings.</p>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🥟 Were dumplings originally invented as medicine?</span>
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Legend has it that Chinese medicinal practitioner Zhang Zhongjing invented dumplings (Jiaozi) during the Han Dynasty to treat frostbitten ears! He packed dough wraps with lamb, chili peppers, and warming herbs shaped like little ears.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🧧 Why do people eat dumplings on Lunar New Year?</span>
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Traditional Jiaozi are shaped like <em>yuanbao</em> (ancient Chinese silver and gold ingots). Eating them on New Year's Eve represents wrapping up wealth, prosperity, and good luck for the year ahead.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>💧 How does soup actually get inside Xiao Long Bao?</span>
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>The broth is not injected! Chefs prepare a collagen-rich pork or chicken stock that cools into a firm gelatin (aspic). When diced and folded into the dumpling, the steam melts it into hot, rich soup inside the wrapper.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🥟</span>
+          <span class="logo-text">Dumpling Haven</span>
+        </div>
+        <p>Celebrating the universal language of dough and delicious fillings.</p>
+      </div>
+      <div class="footer-credit">
+        <p>Crafted with warmth & chopsticks. Eat well, stay cozy!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
